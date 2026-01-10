@@ -1,0 +1,12 @@
+a=5
+b=2.5
+c="Hello"
+d=True
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print("After Type Casting: ")
+a=str(a)
+print(a)
+print(type(a))
