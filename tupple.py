@@ -1,0 +1,7 @@
+tupple1 = ()
+print(tupple1)
+tupple1 = (1,2,3)
+print(tupple1)
+tupple1 = (1,"Hello",2.2)
+print(tupple1)
+print(tupple1[1])
