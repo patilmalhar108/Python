@@ -1,11 +1,12 @@
-
-def is_armstrong(num):
-    num_str = str(num)
-    power = len(num_str)
-    total_sum = sum(int(digit) ** power for digit in num_str)
-    return total_sum == num
-number = int(input("Enter a number: "))
-if is_armstrong(number):
-    print(f"{number} is an Armstrong number")
+number = int(input("Enter any number: "))
+digits = len(str(number))
+result = 0
+temp = number
+while temp > 0:
+    digit = temp % 10
+    result = result + digit ** digits
+    temp = temp // 10
+if number == result:
+    print(number,"is an armstrong number")
 else:
-    print(f"{number} is not an Armstrong number")
+    print(number,"is not an armstrong number")
